@@ -15,6 +15,7 @@ public class Universita {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
+	private String nomeUniversita;
 	private String nomeCitta;
 	private boolean is_privata;
 	
@@ -22,6 +23,19 @@ public class Universita {
 	private List<Dipartimento> dipartimenti;
 	
 	
+	
+	public String getNomeUniversita() {
+		return nomeUniversita;
+	}
+	public void setNomeUniversita(String nomeUniversita) {
+		this.nomeUniversita = nomeUniversita;
+	}
+	public List<Dipartimento> getDipartimenti() {
+		return dipartimenti;
+	}
+	public void setDipartimenti(List<Dipartimento> dipartimenti) {
+		this.dipartimenti = dipartimenti;
+	}
 	public long getId() {
 		return id;
 	}

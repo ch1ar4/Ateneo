@@ -70,6 +70,7 @@ public class UniversitaServiceImplementation implements UniversitaService {
 		dto.setId(uni.getId());
 		dto.setNomeCitta(uni.getNomeCitta());
 		dto.setIs_privata(uni.isIs_privata());
+		dto.setNomeUniversita(uni.getNomeUniversita());
 
 		if (uni.getDipartimento() != null) {
 			for (Dipartimento dip : uni.getDipartimento()) {
@@ -86,6 +87,7 @@ public class UniversitaServiceImplementation implements UniversitaService {
 		uni.setId(dto.getId());
 		uni.setNomeCitta(dto.getNomeCitta());
 		uni.setIs_privata(dto.isIs_privata());
+		uni.setNomeUniversita(dto.getNomeUniversita());
 
 		if (dto.getDipartimenti() != null) {
 			for (long id : dto.getDipartimenti()) {

@@ -8,6 +8,7 @@ public class UniversitaDto {
 	private long id;
 	private String nomeCitta;
 	private boolean is_privata;
+	private String nomeUniversita;
 	
 	private List<Long> dipartimenti;
 	
@@ -25,6 +26,16 @@ public class UniversitaDto {
 	}
 
 
+
+
+	public String getNomeUniversita() {
+		return nomeUniversita;
+	}
+
+
+	public void setNomeUniversita(String nomeUniversita) {
+		this.nomeUniversita = nomeUniversita;
+	}
 
 
 	public List<Long> getDipartimenti() {
